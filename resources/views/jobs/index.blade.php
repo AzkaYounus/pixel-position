@@ -2,10 +2,10 @@
     <div class="space-y-10">
         <section class="text-center pt-6">
             <h1 class="font-bold text-4xl">Let's Find Your Next Job</h1>
-
-            <form action="/search" class="mt-6">
-                <input type="text" placeholder="Web Developer..."  class="rounded-xl bg-white/20 border-white/20 px-10 w-full max-w-xl h-12"/>
-            </form>
+            
+            <x-forms.form action="/search" class="mt-6">
+            <x-forms.input :label="false" name="q" placeholder="Web developer..."></x-forms.input>
+            </x-forms.form>
 
         </section>
         <section class="pt-10">
